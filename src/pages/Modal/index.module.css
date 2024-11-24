@@ -1,0 +1,85 @@
+
+.overlay {
+
+    background: rgba(0, 0, 0, 0.548);
+    
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: modalStart;
+    animation-duration: 500ms;
+    
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes modalStart {
+    0% {
+        opacity: 0;
+        transform: matrix(0.2, 0, 0, 1, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: matrix3d(1,0,0,1,0,0);
+    }
+}
+
+
+.modal-end {
+    animation-name: modalEnd;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+
+
+@keyframes modalEnd {
+    0% {
+        opacity: 1;
+        transform: matrix3d(1,0,0,1,0,0);
+    }
+    100% {
+        opacity: 0;
+        transform: matrix(0.2, 0, 0, 1, 0, 0);
+    }
+}
+
+
+
+
+
+.modal {
+    position: relative;
+    width: 90%;
+    height: 95%;
+    
+}
+
+.modalHeader {
+    width: 100%;
+    text-align: right;
+}
+
+.modalContent {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
