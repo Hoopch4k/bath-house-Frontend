@@ -31,7 +31,7 @@ export default class xmlRequests {
 
         this.xhr.onload = async () => {
 
-            console.log(this.xhr)
+            
         
             let response = this.xhr
             if (this.xhr.status === 200) {
