@@ -1,0 +1,102 @@
+
+
+.modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.836);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.closeBtn {
+    position: fixed;
+    right: 0;
+    top: 0;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+}
+
+.modal .currentImg {
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.left,
+.right {
+    position: fixed;
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: all .2s;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.leftBtn {
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    rotate: 315deg;
+    margin-left: 5px;
+}
+
+.rightBtn {
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    rotate: 45deg;
+    margin-right: 5px;
+}
+
+.left:hover,
+.right:hover {
+    scale: 1.2;
+    background: rgba(255, 255, 255, 0.384);
+}
+
+
+.pagination {
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination img {
+    max-width: clamp(10px, 8vw, 100px);
+    transition: all .2s;
+    border-radius: 5px;
+}
+
+.pagination img:hover {
+    scale: 1.2
+}
+
+.paginationCurrent {
+    scale: 1.1;
+    box-shadow: 0 0 15px #fff;
+    
+}
